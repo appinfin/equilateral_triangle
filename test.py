@@ -6,11 +6,11 @@ ent_list = []
 
 def create_entry():
     """Функция создаёт 9 виджетов Entry"""
-    for col in range(1, 4):
-        for row in range(2, 5):
+    for row in range(2, 5):
+        for col in range(1, 4):
             ent = Entry(width=5)
             ent.grid(row=row, column=col, padx=5, pady=5)
-            ent.insert(col, '0')
+            ent.insert(0, '0')
             ent_list.append(ent)
 
 
